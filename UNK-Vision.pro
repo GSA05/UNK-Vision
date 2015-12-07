@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += sql core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,6 +23,7 @@ HEADERS  += mainwindow.h \
     abstract_shape.h \
     isotope.h \
     abstract_model.h \
-    material.h
+    material.h \
+    initdb.h
 
 FORMS    += mainwindow.ui
