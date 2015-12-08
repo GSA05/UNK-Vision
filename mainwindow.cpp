@@ -58,6 +58,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    model->database().close();
     delete model;
 }
 

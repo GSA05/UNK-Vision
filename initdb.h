@@ -32,7 +32,7 @@ QVariant addAuthor(QSqlQuery &q, const QString &name, const QDate &birthdate)
 QSqlError initDb()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(":memory:");
+    db.setDatabaseName("test.sqlite");
 
     if (!db.open())
         return db.lastError();
