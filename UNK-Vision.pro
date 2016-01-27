@@ -17,13 +17,16 @@ SOURCES += main.cpp\
     abstract_shape.cpp \
     isotope.cpp \
     abstract_model.cpp \
-    material.cpp
+    material.cpp \
+    unk.cpp
 
 HEADERS  += mainwindow.h \
     abstract_shape.h \
     isotope.h \
     abstract_model.h \
     material.h \
-    initdb.h
+    initdb.h \
+    unk.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    unk.ui
