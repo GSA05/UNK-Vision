@@ -47,12 +47,12 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
     // Set the model and hide the ID column
-    ui->tableView->setModel(model);
-    //ui->tableView->setItemDelegate(new BookDelegate(ui.bookTable));
+    /*ui->tableView->setModel(model);
+    ui->tableView->setItemDelegate(new BookDelegate(ui.bookTable));
     ui->tableView->setColumnHidden(model->fieldIndex("id"), true);
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
 
-    ui->tableView->setCurrentIndex(model->index(0, 0));
+    ui->tableView->setCurrentIndex(model->index(0, 0));*/
 }
 
 MainWindow::~MainWindow()
