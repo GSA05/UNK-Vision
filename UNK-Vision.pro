@@ -32,3 +32,5 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     unk.ui
+
+DISTFILES +=

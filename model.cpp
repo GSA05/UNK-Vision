@@ -58,8 +58,8 @@ Item *Model::getItem(const QModelIndex &index) const
 QVariant Model::headerData(int section, Qt::Orientation orientation,
                                int role) const
 {
-    if (orientation == Qt::Horizontal && role == Qt::DisplayRole)
-        return rootItem->data(section);
+    //if (orientation == Qt::Horizontal && role == Qt::DisplayRole)
+    //    return rootItem->data(section);
 
     return QVariant();
 }

@@ -2,6 +2,7 @@
 #define UNK_H
 
 #include <QMainWindow>
+#include "model.h"
 
 namespace Ui {
 class UNK;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::UNK *ui;
+    Model *current_model;
 };
 
 #endif // UNK_H

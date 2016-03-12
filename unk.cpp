@@ -6,6 +6,10 @@ UNK::UNK(QWidget *parent) :
     ui(new Ui::UNK)
 {
     ui->setupUi(this);
+    QStringList headers;
+    headers << tr("Title");
+    current_model = new Model(headers,"123\n    231\n    345\n");
+    ui->treeView->setModel(current_model);
 }
 
 UNK::~UNK()
