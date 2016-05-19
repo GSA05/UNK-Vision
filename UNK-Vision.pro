@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     Program/UNKPIJ/unkpij.cpp \
     Program/CELLHI/cellhi.cpp \
     Program/AVR/avr.cpp \
-    Data/data.cpp
+    Data/data.cpp \
+    Data/Macsin/macsin.cpp
 
 HEADERS  += mainwindow.h \
     abstract_shape.h \
@@ -40,7 +41,8 @@ HEADERS  += mainwindow.h \
     Program/UNKPIJ/unkpij.h \
     Program/CELLHI/cellhi.h \
     Program/AVR/avr.h \
-    Data/data.h
+    Data/data.h \
+    Data/Macsin/macsin.h
 
 FORMS    += mainwindow.ui \
     unk.ui
