@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     unk.cpp \
     item.cpp \
     model.cpp \
-    Program/program.cpp
+    Program/program.cpp \
+    Program/MACSEC/macsec.cpp
 
 HEADERS  += mainwindow.h \
     abstract_shape.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     unk.h \
     model.h \
     item.h \
-    Program/program.h
+    Program/program.h \
+    Program/MACSEC/macsec.h
 
 FORMS    += mainwindow.ui \
     unk.ui
