@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     model.cpp \
     Program/program.cpp \
     Program/MACSEC/macsec.cpp \
-    Program/UNKPIJ/unkpij.cpp
+    Program/UNKPIJ/unkpij.cpp \
+    Program/CELLHI/cellhi.cpp
 
 HEADERS  += mainwindow.h \
     abstract_shape.h \
@@ -34,7 +35,8 @@ HEADERS  += mainwindow.h \
     item.h \
     Program/program.h \
     Program/MACSEC/macsec.h \
-    Program/UNKPIJ/unkpij.h
+    Program/UNKPIJ/unkpij.h \
+    Program/CELLHI/cellhi.h
 
 FORMS    += mainwindow.ui \
     unk.ui
