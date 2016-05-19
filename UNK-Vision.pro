@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     material.cpp \
     unk.cpp \
     item.cpp \
-    model.cpp
+    model.cpp \
+    Program/program.cpp
 
 HEADERS  += mainwindow.h \
     abstract_shape.h \
@@ -28,7 +29,8 @@ HEADERS  += mainwindow.h \
     initdb.h \
     unk.h \
     model.h \
-    item.h
+    item.h \
+    Program/program.h
 
 FORMS    += mainwindow.ui \
     unk.ui
