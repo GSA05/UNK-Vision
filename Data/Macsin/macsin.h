@@ -2,10 +2,50 @@
 #define MACSIN_H
 
 #include "Data/data.h"
+#include <QVector>
 
 class Macsin : public Data
 {
-//RECORD 1
+    class Material
+    {
+    //RECORD 1
+        quint8 NIZOT;
+        quint8 NMODER;
+
+    //RECORD 2
+        QVector<quint16> isotopes;
+
+    //RECORD 3
+        QVector<qreal> concentrations;
+
+    //RECORD 4
+        QVector<quint8> models;
+
+    //RECORD 5
+        qreal temperature;
+
+    //RECORD 6
+        QVector<QVector<quint8> > microgroupes;
+
+    public:
+        Material();
+        quint8 getNIZOT() const;
+        void setNIZOT(const quint8 &value);
+        quint8 getNMODER() const;
+        void setNMODER(const quint8 &value);
+        QVector<quint16> getIsotopes() const;
+        void setIsotopes(const QVector<quint16> &value);
+        QVector<qreal> getConcentrations() const;
+        void setConcentrations(const QVector<qreal> &value);
+        QVector<quint8> getModels() const;
+        void setModels(const QVector<quint8> &value);
+        qreal getTemperature() const;
+        void setTemperature(const qreal &value);
+        QVector<QVector<quint8> > getMicrogroupes() const;
+        void setMicrogroupes(const QVector<QVector<quint8> > &value);
+    };
+
+    //RECORD 1
     quint8 NGEO;
     quint8 NZON;
     quint8 NGR;
@@ -24,6 +64,9 @@ class Macsin : public Data
 
 //RECORD 5
     QVector<quint8> ones;
+
+//RECORD 6
+    QVector<Material> materials;
 public:
     Macsin();
     quint8 getNGEO() const;
@@ -46,6 +89,8 @@ public:
     void setZones(const QVector<quint16> &value);
     QVector<quint8> getOnes() const;
     void setOnes(const QVector<quint8> &value);
+    QVector<Material> getMaterials() const;
+    void setMaterials(const QVector<Material> &value);
 };
 
 #endif // MACSIN_H

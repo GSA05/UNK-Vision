@@ -100,7 +100,87 @@ void Macsin::setOnes(const QVector<quint8> &value)
     ones = value;
 }
 
+QVector<Macsin::Material> Macsin::getMaterials() const
+{
+    return materials;
+}
+
+void Macsin::setMaterials(const QVector<Macsin::Material> &value)
+{
+    materials = value;
+}
+
 Macsin::Macsin()
 {
 
+}
+
+quint8 Macsin::Material::getNIZOT() const
+{
+    return NIZOT;
+}
+
+void Macsin::Material::setNIZOT(const quint8 &value)
+{
+    NIZOT = value;
+}
+
+quint8 Macsin::Material::getNMODER() const
+{
+    return NMODER;
+}
+
+void Macsin::Material::setNMODER(const quint8 &value)
+{
+    NMODER = value;
+}
+
+QVector<quint16> Macsin::Material::getIsotopes() const
+{
+    return isotopes;
+}
+
+void Macsin::Material::setIsotopes(const QVector<quint16> &value)
+{
+    isotopes = value;
+}
+
+QVector<qreal> Macsin::Material::getConcentrations() const
+{
+    return concentrations;
+}
+
+void Macsin::Material::setConcentrations(const QVector<qreal> &value)
+{
+    concentrations = value;
+}
+
+QVector<quint8> Macsin::Material::getModels() const
+{
+    return models;
+}
+
+void Macsin::Material::setModels(const QVector<quint8> &value)
+{
+    models = value;
+}
+
+qreal Macsin::Material::getTemperature() const
+{
+    return temperature;
+}
+
+void Macsin::Material::setTemperature(const qreal &value)
+{
+    temperature = value;
+}
+
+QVector<QVector<quint8> > Macsin::Material::getMicrogroupes() const
+{
+    return microgroupes;
+}
+
+void Macsin::Material::setMicrogroupes(const QVector<QVector<quint8> > &value)
+{
+    microgroupes = value;
 }
