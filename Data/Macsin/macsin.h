@@ -3,6 +3,7 @@
 
 #include "Data/data.h"
 #include <QVector>
+#include <QString>
 
 class Macsin : public Data
 {
@@ -27,6 +28,8 @@ class Macsin : public Data
     //RECORD 6
         QVector<QVector<quint8> > microgroupes;
 
+        QString name;
+
     public:
         Material();
         quint8 getNIZOT() const;
@@ -43,6 +46,8 @@ class Macsin : public Data
         void setTemperature(const qreal &value);
         QVector<QVector<quint8> > getMicrogroupes() const;
         void setMicrogroupes(const QVector<QVector<quint8> > &value);
+        QString getName() const;
+        void setName(const QString &value);
     };
 
     //RECORD 1

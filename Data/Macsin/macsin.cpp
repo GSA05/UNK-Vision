@@ -115,6 +115,16 @@ Macsin::Macsin()
 
 }
 
+QString Macsin::Material::getName() const
+{
+    return name;
+}
+
+void Macsin::Material::setName(const QString &value)
+{
+    name = value;
+}
+
 quint8 Macsin::Material::getNIZOT() const
 {
     return NIZOT;
