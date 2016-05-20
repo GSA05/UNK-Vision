@@ -50,7 +50,7 @@ class Macsin : public Data
         void setName(const QString &value);
     };
 
-    //RECORD 1
+//RECORD 1
     quint8 NGEO;
     quint8 NZON;
     quint8 NGR;
