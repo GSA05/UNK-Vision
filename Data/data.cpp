@@ -1,6 +1,8 @@
 #include "data.h"
 
-Data::Data()
+using namespace Data;
+
+Data::Data::Data()
 {
 
 }

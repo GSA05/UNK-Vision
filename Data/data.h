@@ -3,10 +3,14 @@
 
 #include <QtGlobal>
 
+namespace Data {
+
 class Data
 {
 public:
     Data();
 };
+
+}
 
 #endif // DATA_H
