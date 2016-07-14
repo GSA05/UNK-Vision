@@ -1,196 +1,199 @@
 #include "macsin.h"
 
-quint8 Macsin::getNGEO() const
+using namespace Macsin;
+using namespace Material;
+
+quint8 Macsin::Macsin::getNGEO() const
 {
     return NGEO;
 }
 
-void Macsin::setNGEO(const quint8 &value)
+void Macsin::Macsin::setNGEO(const quint8 &value)
 {
     NGEO = value;
 }
 
-quint8 Macsin::getNZON() const
+quint8 Macsin::Macsin::getNZON() const
 {
     return NZON;
 }
 
-void Macsin::setNZON(const quint8 &value)
+void Macsin::Macsin::setNZON(const quint8 &value)
 {
     NZON = value;
 }
 
-quint8 Macsin::getNGR() const
+quint8 Macsin::Macsin::getNGR() const
 {
     return NGR;
 }
 
-void Macsin::setNGR(const quint8 &value)
+void Macsin::Macsin::setNGR(const quint8 &value)
 {
     NGR = value;
 }
 
-quint8 Macsin::getNGRT() const
+quint8 Macsin::Macsin::getNGRT() const
 {
     return NGRT;
 }
 
-void Macsin::setNGRT(const quint8 &value)
+void Macsin::Macsin::setNGRT(const quint8 &value)
 {
     NGRT = value;
 }
 
-quint8 Macsin::getNMAT() const
+quint8 Macsin::Macsin::getNMAT() const
 {
     return NMAT;
 }
 
-void Macsin::setNMAT(const quint8 &value)
+void Macsin::Macsin::setNMAT(const quint8 &value)
 {
     NMAT = value;
 }
 
-quint16 Macsin::getNPRED() const
+quint16 Macsin::Macsin::getNPRED() const
 {
     return NPRED;
 }
 
-void Macsin::setNPRED(const quint16 &value)
+void Macsin::Macsin::setNPRED(const quint16 &value)
 {
     NPRED = value;
 }
 
-qreal Macsin::getAlbedo() const
+qreal Macsin::Macsin::getAlbedo() const
 {
     return albedo;
 }
 
-void Macsin::setAlbedo(const qreal &value)
+void Macsin::Macsin::setAlbedo(const qreal &value)
 {
     albedo = value;
 }
 
-QVector<qreal> Macsin::getRadiuses() const
+QVector<qreal> Macsin::Macsin::getRadiuses() const
 {
     return radiuses;
 }
 
-void Macsin::setRadiuses(const QVector<qreal> &value)
+void Macsin::Macsin::setRadiuses(const QVector<qreal> &value)
 {
     radiuses = value;
 }
 
-QVector<quint16> Macsin::getZones() const
+QVector<quint16> Macsin::Macsin::getZones() const
 {
     return zones;
 }
 
-void Macsin::setZones(const QVector<quint16> &value)
+void Macsin::Macsin::setZones(const QVector<quint16> &value)
 {
     zones = value;
 }
 
-QVector<quint8> Macsin::getOnes() const
+QVector<quint8> Macsin::Macsin::getOnes() const
 {
     return ones;
 }
 
-void Macsin::setOnes(const QVector<quint8> &value)
+void Macsin::Macsin::setOnes(const QVector<quint8> &value)
 {
     ones = value;
 }
 
-QVector<Macsin::Material> Macsin::getMaterials() const
+QVector<Material::Material> Macsin::Macsin::getMaterials() const
 {
     return materials;
 }
 
-void Macsin::setMaterials(const QVector<Macsin::Material> &value)
+void Macsin::Macsin::setMaterials(const QVector<Material::Material> &value)
 {
     materials = value;
 }
 
-Macsin::Macsin()
+Macsin::Macsin::Macsin()
 {
 
 }
 
-QString Macsin::Material::getName() const
+QString Material::Material::getName() const
 {
     return name;
 }
 
-void Macsin::Material::setName(const QString &value)
+void Material::Material::setName(const QString &value)
 {
     name = value;
 }
 
-quint8 Macsin::Material::getNIZOT() const
+quint8 Material::Material::getNIZOT() const
 {
     return NIZOT;
 }
 
-void Macsin::Material::setNIZOT(const quint8 &value)
+void Material::Material::setNIZOT(const quint8 &value)
 {
     NIZOT = value;
 }
 
-quint8 Macsin::Material::getNMODER() const
+quint8 Material::Material::getNMODER() const
 {
     return NMODER;
 }
 
-void Macsin::Material::setNMODER(const quint8 &value)
+void Material::Material::setNMODER(const quint8 &value)
 {
     NMODER = value;
 }
 
-QVector<quint16> Macsin::Material::getIsotopes() const
+QVector<quint16> Material::Material::getIsotopes() const
 {
     return isotopes;
 }
 
-void Macsin::Material::setIsotopes(const QVector<quint16> &value)
+void Material::Material::setIsotopes(const QVector<quint16> &value)
 {
     isotopes = value;
 }
 
-QVector<qreal> Macsin::Material::getConcentrations() const
+QVector<qreal> Material::Material::getConcentrations() const
 {
     return concentrations;
 }
 
-void Macsin::Material::setConcentrations(const QVector<qreal> &value)
+void Material::Material::setConcentrations(const QVector<qreal> &value)
 {
     concentrations = value;
 }
 
-QVector<quint8> Macsin::Material::getModels() const
+QVector<quint8> Material::Material::getModels() const
 {
     return models;
 }
 
-void Macsin::Material::setModels(const QVector<quint8> &value)
+void Material::Material::setModels(const QVector<quint8> &value)
 {
     models = value;
 }
 
-qreal Macsin::Material::getTemperature() const
+qreal Material::Material::getTemperature() const
 {
     return temperature;
 }
 
-void Macsin::Material::setTemperature(const qreal &value)
+void Material::Material::setTemperature(const qreal &value)
 {
     temperature = value;
 }
 
-QVector<QVector<quint8> > Macsin::Material::getMicrogroupes() const
+QVector<QVector<quint8> > Material::Material::getMicrogroupes() const
 {
     return microgroupes;
 }
 
-void Macsin::Material::setMicrogroupes(const QVector<QVector<quint8> > &value)
+void Material::Material::setMicrogroupes(const QVector<QVector<quint8> > &value)
 {
     microgroupes = value;
 }
