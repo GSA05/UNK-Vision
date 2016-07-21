@@ -1,7 +1,7 @@
 #include "macsin.h"
 
-using namespace Macsin;
-using namespace Material;
+using namespace Data::Macsin;
+using namespace Data::Macsin::Material;
 
 quint8 Macsin::Macsin::getNGEO() const
 {
