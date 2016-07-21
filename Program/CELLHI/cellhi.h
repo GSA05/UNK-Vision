@@ -3,10 +3,19 @@
 
 #include "Program/program.h"
 
-class CELLHI : public Program
-{
-public:
-    CELLHI();
-};
+namespace Program {
+
+    namespace CELLHI {
+
+        class CELLHI : public Program
+        {
+        public:
+            CELLHI();
+        };
+
+    }
+
+}
+
 
 #endif // CELLHI_H
