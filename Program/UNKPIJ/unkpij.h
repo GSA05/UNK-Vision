@@ -3,10 +3,19 @@
 
 #include "Program/program.h"
 
-class UNKPIJ : public Program
-{
-public:
-    UNKPIJ();
-};
+namespace Program {
+
+    namespace UNKPIJ {
+
+        class UNKPIJ : public Program
+        {
+        public:
+            UNKPIJ();
+        };
+
+    }
+
+}
+
 
 #endif // UNKPIJ_H
