@@ -3,10 +3,18 @@
 
 #include "Program/program.h"
 
-class MACSEC : public Program
-{
-public:
-    MACSEC();
-};
+namespace Program {
+
+    namespace MACSEC {
+
+        class MACSEC : public Program
+        {
+        public:
+            MACSEC();
+        };
+
+    }
+
+}
 
 #endif // MACSEC_H
