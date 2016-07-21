@@ -3,10 +3,18 @@
 
 #include "Program/program.h"
 
-class AVR : public Program
-{
-public:
-    AVR();
-};
+namespace Program {
+
+    namespace AVR {
+
+        class AVR : public Program
+        {
+        public:
+            AVR();
+        };
+
+    }
+
+}
 
 #endif // AVR_H
