@@ -4,11 +4,15 @@
 #include <QProcess>
 #include <QDir>
 
-class Program: public QProcess
-{
-    QDir path;
-public:
-    Program();
-};
+namespace Program {
+
+    class Program: public QProcess
+    {
+        QDir path;
+    public:
+        Program();
+    };
+
+}
 
 #endif // PROGRAM_H

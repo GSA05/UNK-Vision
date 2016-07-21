@@ -1,6 +1,8 @@
 #include "program.h"
 
-Program::Program()
+using namespace Program;
+
+Program::Program::Program()
 {
 
 }
